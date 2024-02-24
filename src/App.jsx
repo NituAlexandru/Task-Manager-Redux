@@ -1,19 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./App.css";
+import { Layout } from "./components/Layout/Layout";
+import { TaskForm } from "./components/TaskForm/TaskForm";
+import { AppBar } from "./components/AppBar/AppBar";
+import { TaskList } from "./components/TaskList/TaskList";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>Task Manager</h1>
-    </div>
+    <Layout>
+      <AppBar />
+      <TaskForm />
+      <TaskList />
+    </Layout>
   );
-}
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+};
 
 export default App;
