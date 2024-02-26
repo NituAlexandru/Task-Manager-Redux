@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
 import "./App.css";
 import { Layout } from "./components/Layout/Layout";
 import { TaskForm } from "./components/TaskForm/TaskForm";
